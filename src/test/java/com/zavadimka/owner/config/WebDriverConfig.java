@@ -3,10 +3,14 @@ package com.zavadimka.owner.config;
 public class WebDriverConfig {
 
     public String getBaserUrl (){
-       return "https://github.com/";
+        String baseUrl = System.getProperty("baseUrl", "https://github.com/");
+
+        return baseUrl;
     }
 
     public Browser getBrowser(){
-        return Browser.CHROME;
+        String browser = System.getProperty("browser", "CHROME");
+
+        return Browser.valueOf(browser);
     }
 }

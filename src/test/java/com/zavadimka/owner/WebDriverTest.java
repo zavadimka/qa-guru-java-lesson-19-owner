@@ -5,6 +5,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 
+import static com.codeborne.selenide.Selenide.sleep;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class WebDriverTest {
@@ -28,7 +29,6 @@ public class WebDriverTest {
         String title = driver.getTitle();
         assertEquals(title, "GitHub: Let’s build from here · GitHub");
 
-        stopWebDriver();
     }
 
     @AfterEach

@@ -13,7 +13,7 @@ def allureVersion = "2.21.0",
     selenideVersion = "6.19.1",
     junitVersion = "5.10.1",
     slf4jVersion = "2.0.9",
-    ownerVersion = "1.0.12",
+    ownerVersion = "1.0.4",
     webDriverManagerVersion = "5.7.0"
 
 allure {
